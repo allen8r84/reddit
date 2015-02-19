@@ -1,10 +1,7 @@
 var app = angular.module('reddit');
 
 app.service('FirebaseService', function($http, $q) {
-    //https://devmtn.firebaseio.com/posts.json
-    //DevMtn
-    debugger // use this anywhere to debug code
-    this.getdata = function() {
+    this.getData = function() {
         var deferred = $q.defer();
         $http({
             method: 'GET',
